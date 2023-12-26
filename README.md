@@ -32,8 +32,19 @@ Instagram: https://www.instagram.com/alexomegapy/
 #### LlamaIndex LLMs-Prompts: LlamaIndex Intro. Tutorial (LlamaIndex LLMs-Prompts.ipynb)
 -----------------------------------------------------------------------------------------------------------------------------
 Testing an LLM using the primary prompt templates used in LlamaIndex.  
-LlamaIndex LLMs-Prompts tutorial base on LlamaIndex Bottoms-Up Development video series
+LlamaIndex LLMs-Prompts tutorial based on LlamaIndex Bottoms-Up Development video series
 
+- Initialization 
+    - API Keys
+    - LLM Init.
+    - Load File
+
+- Templates
+    - Context
+    - Refined Context - More Context
+
+- Chat
+    - Simulate a ChatBot that can answer questions about llama-index.
 
 Credit: LlamaIndex https://www.youtube.com/watch?v=p0jcvGiBKSA&t=201s
 
