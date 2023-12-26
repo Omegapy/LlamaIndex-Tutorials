@@ -13,7 +13,6 @@ This repository is a series of LlamaIndex Tutorials on Jupyter Notebook
 
 -----------------------------------------------------------------------------------------------------------------------------
 Requirements:  
-
 Python: https://www.python.org/  
 Jupyter Notebook: https://jupyter.org/  
 LlamaIndex: https://www.llamaindex.ai/  
@@ -26,6 +25,17 @@ GitHub: https://github.com/Omegapy
 Facebook: https://www.facebook.com/profile.php?id=100089638857137  
 Twitter: https://twitter.com/RicciardiAlex  
 Instagram: https://www.instagram.com/alexomegapy/
+
+-----------------------------------------------------------------------------------------------------------------------------
+ Projects map:  
+ 
+Jupyter Notebooks LlamaIndex Tutorials:
+- LlamaIndex LLMs-Prompts.ipynb
+- LlamaIndex Doc-Metadata.ipynp
+
+Folders:
+- Doc (document/data)
+- llama_docs_bot (Python files)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
