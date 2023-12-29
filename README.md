@@ -9,7 +9,9 @@ LlamaIndex Tutorials
 -----------------------------------------------------------------------------------------------------------------------------
 Projects Description:
 
-This repository is a series of LlamaIndex Tutorials on Jupyter Notebook
+This repository is a series of LlamaIndex Tutorials on Jupyter Notebook.  
+The tutorials are based on LlamaIndex Discover LlamaIndex YouTube video series.  
+https://www.youtube.com/playlist?list=PLTZkGHtR085ZjK1srrSZIrkeEzQiMjO9W
 
 -----------------------------------------------------------------------------------------------------------------------------
 Requirements:  
