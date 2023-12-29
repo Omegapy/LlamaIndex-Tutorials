@@ -2,6 +2,6 @@ jupyter lab
 python-dotenv
 llama-index>=0.7.7
 transformers
-#PyTorch
 sentence-transformers # pip install -U sentence-transformers
 InstructorEmbedding
+spacy
