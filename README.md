@@ -59,9 +59,9 @@ Credit: LlamaIndex https://www.youtube.com/watch?v=p0jcvGiBKSA&t=201s
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-#### LlamaIndex LlamaIndex Doc-Metadata: LlamaIndex Intro. Tutorial (LlamaIndex Doc-Metadata.ipynb)
+#### LlamaIndex Doc-Metadata: LlamaIndex Intro. Tutorial (LlamaIndex Doc-Metadata.ipynb)
 -----------------------------------------------------------------------------------------------------------------------------
-now. And read Metadata.  
+Load data and create document objects in LlamaIndex. Specifically markdown files for now. And read Metadata.  
 
 Initialization
 - For markdown Docs. Reader see llama_docs_bot/markdown_docs_reader.py (it Extract text from markdown files into Document objects.)
@@ -69,7 +69,7 @@ Initialization
 - loads project documents from each folder
 
 Read Metadata
-- MetadataMode make printed file look nice
+- MetadataMode makes printed files look nice
 - Improve the Metadata print formatting 
 
 Metadata Printing Advanced Customization
@@ -77,3 +77,34 @@ Metadata Printing Advanced Customization
 - Hide the File Name from the Embedding Model 
 
 credit: LlamaIndex https://www.youtube.com/watch?v=nGNoacku0YY
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+#### Evaluation Baseline LLM: LlamaIndex Intro. Tutorial (Evaluation Baseline LLM.ipynb)
+-----------------------------------------------------------------------------------------------------------------------------
+Using LlamaIndex to evaluate an LLM query with the following two main evaluations:
+- ResponseSourceEvaluator:
+    - uses an LLM to decide if the response is similar enough to the sources 
+        - a good measure for hallucination detection!
+- QueryResponseEvaluator:
+    - uses an LLM to decide if a response is similar enough to the original query 
+        - a good measure for checking if the query was answered!
+
+Project Map:
+
+- API Key
+- Loading Docs
+    - load_markdown_docs() Function
+    - Load documents from each folder.
+- Create the indices
+   - Create a vector store index for each folder 
+- Create Query Engine Tools
+    - Create a Unified Query Engine
+- Test the Query Engine
+    - Evaluate the Baseline
+        - Generate the Dataset
+        - Evaluate with the Dataset
+        - Investigating Hallucinations
+        - Generating response from a known hallucinated_questions
+    
+Credit: LlamaIndex https://www.youtube.com/watch?v=2c64G-iDJKQ
