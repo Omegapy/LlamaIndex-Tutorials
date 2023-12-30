@@ -40,7 +40,7 @@ Folders:
 - llama_docs_bot (Python files)
 -----------------------------------------------------------------------------------------------------------------------------
 
-#### LlamaIndex LLMs-Prompts: LlamaIndex Intro. Tutorial (LlamaIndex LLMs-Prompts.ipynb)
+#### 1. LlamaIndex LLMs-Prompts: LlamaIndex Intro. Tutorial (1- LlamaIndex LLMs-Prompts.ipynb)
 -----------------------------------------------------------------------------------------------------------------------------
 Testing an LLM using the primary prompt templates used in LlamaIndex.  
 LlamaIndex LLMs-Prompts tutorial based on LlamaIndex Bottoms-Up Development video series
@@ -61,7 +61,7 @@ Credit: LlamaIndex https://www.youtube.com/watch?v=p0jcvGiBKSA&t=201s
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-#### LlamaIndex Doc-Metadata: LlamaIndex Intro. Tutorial (LlamaIndex Doc-Metadata.ipynb)
+#### 2. LlamaIndex Doc-Metadata: LlamaIndex Intro. Tutorial (2- LlamaIndex Doc-Metadata.ipynb)
 -----------------------------------------------------------------------------------------------------------------------------
 Load data and create document objects in LlamaIndex. Specifically markdown files for now. And read Metadata.  
 
@@ -82,7 +82,7 @@ credit: LlamaIndex https://www.youtube.com/watch?v=nGNoacku0YY
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-#### Evaluation Baseline LLM: LlamaIndex Intro. Tutorial (Evaluation Baseline LLM.ipynb)
+#### 3. Evaluation Baseline LLM: LlamaIndex Intro. Tutorial (3- Evaluation Baseline LLM.ipynb)
 -----------------------------------------------------------------------------------------------------------------------------
 Using LlamaIndex to evaluate an LLM query with the following two main evaluations:
 - ResponseSourceEvaluator:
