@@ -1,12 +1,13 @@
 import os
 import nest_asyncio
+
 nest_asyncio.apply()
 
 from .markdown_docs_reader import MarkdownDocsReader
 from llama_index import (
-    SimpleDirectoryReader, 
+    SimpleDirectoryReader,
     VectorStoreIndex,
-    StorageContext, 
+    StorageContext,
     load_index_from_storage
 )
 from llama_index.query_engine import RetrieverQueryEngine
@@ -14,14 +15,14 @@ from llama_index.node_parser import HierarchicalNodeParser, get_leaf_nodes
 from llama_index.retrievers import AutoMergingRetriever
 from llama_index.schema import Document, MetadataMode
 from llama_index.storage.docstore import SimpleDocumentStore
-from llama_index.tools import QueryEngineTool, ToolMetadata 
+from llama_index.tools import QueryEngineTool, ToolMetadata
 
 
 # load documents
 def load_markdown_docs(filepath):
     """Load markdown docs from a directory, excluding all other file types."""
     loader = SimpleDirectoryReader(
-        input_dir=filepath, 
+        input_dir=filepath,
         required_exts=[".md"],
         file_extractor={".md": MarkdownDocsReader()},
         recursive=True
@@ -32,9 +33,9 @@ def load_markdown_docs(filepath):
     # combine all documents into one
     documents = [
         Document(text="\n\n".join(
-                document.get_content(metadata_mode=MetadataMode.ALL) 
-                for document in documents
-            )
+            document.get_content(metadata_mode=MetadataMode.ALL)
+            for document in documents
+        )
         )
     ]
 
@@ -43,7 +44,7 @@ def load_markdown_docs(filepath):
     large_chunk_size = 1536
     node_parser = HierarchicalNodeParser.from_defaults(
         chunk_sizes=[
-            large_chunk_size, 
+            large_chunk_size,
             large_chunk_size // 3,
         ]
     )
@@ -60,7 +61,7 @@ def get_query_engine_tool(directory, description, postprocessors=None):
         index = load_index_from_storage(storage_context)
 
         retriever = AutoMergingRetriever(
-            index.as_retriever(similarity_top_k=12), 
+            index.as_retriever(similarity_top_k=12),
             storage_context=storage_context
         )
     except:
@@ -74,7 +75,7 @@ def get_query_engine_tool(directory, description, postprocessors=None):
         index.storage_context.persist(persist_dir=f"./data_{os.path.basename(directory)}")
 
         retriever = AutoMergingRetriever(
-            index.as_retriever(similarity_top_k=12), 
+            index.as_retriever(similarity_top_k=12),
             storage_context=storage_context
         )
 
@@ -84,3 +85,6 @@ def get_query_engine_tool(directory, description, postprocessors=None):
     )
 
     return QueryEngineTool(query_engine=query_engine, metadata=ToolMetadata(name=directory, description=description))
+
+
+
