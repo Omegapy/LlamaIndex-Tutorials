@@ -110,3 +110,15 @@ Project Map:
         - Generating response from a known hallucinated_questions
     
 Credit: LlamaIndex https://www.youtube.com/watch?v=2c64G-iDJKQ
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+#### 4. Embeddings LlamaIndex-OpenAI: LlamaIndex Intro. Tutorial (4- Embeddings LlamaIndex-OpenAI.ipynb)
+-----------------------------------------------------------------------------------------------------------------------------
+Projects Description:
+Embeddings are numerical representations of text. To generate embeddings for text, a specific model is required.
+
+In LlamaIndex, the default embedding model is text-embedding-ada-002 from OpenAI.  
+You can also leverage any embedding models offered by Langchain and Huggingface using our LangchainEmbedding wrapper.
+
+credit: LlamaIndex https://www.youtube.com/watch?v=2c64G-iDJKQ&t=47s
